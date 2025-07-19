@@ -116,9 +116,9 @@ All supporting documentation, diagrams, and screenshots have been compiled in th
 
 ### 👨‍💻 **Developer & Contact**
 
-**Name**: Sai Praneetha D
+**Name**: Sai Praneetha D,
 **Email**: [224g1a3279@srit.ac.in](mailto:224g1a3279@srit.ac.in)
-**Role**: Salesforce Developer
+**Role**: Salesforce Developer,
 **Project Status**: ✅ Completed
 
 
