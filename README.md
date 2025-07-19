@@ -77,5 +77,4 @@ Name: sai praneetha D
 Email: 224g1a3279@srit.ac.in
 
 Role: Salesforce Developer 
-
 Project Status: Completed
