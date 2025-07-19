@@ -62,3 +62,10 @@ HandsMen Threads is a tailor-made Salesforce CRM solution crafted for a premium 
 * Enable WhatsApp/Instagram-based messaging for promotions.
 ## **10. Conclusion**
 This Salesforce CRM for HandsMen Threads demonstrates a scalable, automated solution tailored for a high-end fashion brand. It successfully optimizes key operations through Apex, Flows, and declarative tools. The system can be extended with analytics, LWC components, and AI for next-gen CRM capabilities.
+project documentation
+[HandsMen_Threads_document.pdf](https://github.com/user-attachments/files/21326156/HandsMen_Threads_document.pdf)
+Developer & Contact
+Name: sai praneetha D
+Email: 224g1a3279@srit.ac.in
+Role: Salesforce Developer 
+Project Status: Completed
