@@ -4,90 +4,101 @@
 
 ---
 
-### 1. Project Overview
+## 🔍 **Project Overview**
 
-HandsMen Threads is a tailor-made Salesforce CRM solution crafted for a premium men’s fashion brand. This application is designed to streamline custom order management, optimize inventory control, and enhance customer engagement through intelligent automation. The system utilizes **custom objects**, **flows**, **validation rules**, **Apex triggers**, and **scheduled jobs** to manage end-to-end operations with minimal manual intervention.
-
----
-
-### 2. Objectives
-
-- Automate repetitive business tasks (e.g., order confirmation, loyalty updates).  
-- Enhance operational efficiency across sales, inventory, and customer service.  
-- Minimize human error by enforcing data validation and process flows.  
-- Provide real-time insights for decision-making through scalable architecture.  
+**HandsMen Threads** is a customized Salesforce CRM solution designed specifically for a luxury men’s fashion brand. This system automates essential operations like order tracking, customer loyalty, inventory oversight, and marketing campaign management through a combination of Salesforce’s point-and-click tools and advanced Apex programming.
 
 ---
 
-### 3. Phase 1: Requirement Analysis & Planning
+## 🎯 **Objectives**
 
-- Identified core entities requiring tracking: customers, orders, products, inventory, and campaigns.  
-- Created five key custom objects:  
-  - `HandsMen_Customer__c`  
-  - `HandsMen_Product__c`  
-  - `HandsMen_Order__c`  
-  - `Inventory__c`  
-  - `Marketing_Campaign__c`  
-- Mapped relationships using **Lookup** and **Master-Detail** fields.  
-- Defined appropriate field types (Text, Currency, Picklist, Formula).  
-- Documented business rules, validation logic, and automation requirements.  
+* Streamline processes such as order confirmations and loyalty program updates
+* Boost operational performance across Sales, Inventory, and Marketing departments
+* Reduce manual data entry errors using automation and field validations
+* Deliver real-time, scalable insights for business decision-making
 
 ---
 
-### 4. Phase 2: Salesforce Development – Backend & Configurations
+## 🧩 **Salesforce Implementation**
 
-- Used **Object Manager** to create custom objects and fields.  
-- Developed Flows:  
-  - **Order Confirmation Flow**  
-  - **Loyalty Update Flow**  
-  - **Stock Alert Flow**  
-- Created Apex classes:  
-  - `OrderTriggerHandler.cls`  
-  - `InventoryBatchJob.cls`  
-- Designed **email templates** for customer notifications.  
-- Automated email sending using **Flow Actions**.  
+### ✅ **Custom Objects**
+
+* **HandsMen\_Customer\_\_c**: Manages customer details, preferences, and loyalty levels
+* **HandsMen\_Product\_\_c**: Holds product information including pricing, size, and stock status
+* **HandsMen\_Order\_\_c**: Represents customer orders linked with products and current status
+* **Inventory**: Monitors available stock, warehouse data, and replenishment alerts
+* **Marketing\_Campaign\_\_c**: Stores campaign details such as type, schedule, and audience segments
 
 ---
 
-### 5. Phase 3: UI/UX Development & Customization
+## 🗂️ **Tabs & App**
 
-- Added **custom tabs and icons** using App Manager.  
-- Created tailored **Page Layouts** and **Lightning Record Pages**.  
-- Integrated **user-friendly validation messages**.  
-- Ensured smooth navigation within **Lightning Experience**.  
+* **Tab:** HandsMen Customer – quick navigation to customer records
+* **App:** HandsMen Threads – unified Lightning App for all CRM components
 
 ---
 
-### 6. Phase 4: Data Migration, Testing & Security
+## 🧾 **Fields Summary**
 
-- Populated the system with **sample data** for testing.  
-- Performed **unit testing** on Flows and Apex classes.  
-- Created user roles:  
-  - **Inventory Manager**  
-  - **Marketing Manager**  
-- Assigned **Permission Sets** for object-level access control.  
-
----
-
-### 7. Testing and Quality Assurance
-
-- Achieved **>85% test coverage** for Apex logic.  
-- Validated Flows using **debug logs** and test records.  
-- Conducted **manual UI/UX testing** across user roles.  
-- Verified **data integrity** post-migration.  
-- Used **assertions** in test classes to validate logic.  
+| **Object**         | **Key Fields**                                                                                    |
+| ------------------ | ------------------------------------------------------------------------------------------------- |
+| HandsMen Customer  | Name, Email, Phone, Loyalty\_Status\_\_c, Preferred\_Style\_\_c                                   |
+| HandsMen Order     | Order\_Date\_\_c, Product\_\_c, Quantity\_\_c, Total\_Amount\_\_c, Order\_Status\_\_c             |
+| HandsMen Product   | Product\_Name\_\_c, Fabric\_Type\_\_c, Price\_\_c, Size\_\_c, Availability\_Status\_\_c           |
+| Inventory          | Product\_\_c, Stock\_Quantity\_\_c, Stock\_Status\_\_c, Warehouse\_Location\_\_c                  |
+| Marketing Campaign | Campaign\_Name\_\_c, Start\_Date\_\_c, End\_Date\_\_c, Target\_Audience\_\_c, Campaign\_Type\_\_c |
 
 ---
 
-### 8. Phase 5: Deployment, Documentation & Maintenance
+## 🛡️ **Security & Access**
 
-- Deployed metadata using **Salesforce CLI** and **SFDX**.  
-- Initialized **version control** using Git.  
-- Uploaded complete documentation and screenshots to GitHub.
-
-📂 **Project Documentation**: `HandsMen_Threads_document.pdf`
+* **Profiles:** Sales Profile – provides limited access to relevant objects
+* **Roles:** Includes roles for Sales, Inventory Manager, and Marketing Manager
+* **Permission Sets:** `Permission_Platform_1` – grants additional access to restricted fields and objects
+* **Sample Users:** Niklaus, Kol, Loretta Daniel – represent different team members for testing and demo purposes
 
 ---
+
+## 📧 **Email Templates & Alerts**
+
+* **Order Confirmation:** Dispatched to customers upon order success
+* **Loyalty Notification:** Informs customers about changes in loyalty status
+* **Low Stock Alert:** Notifies inventory managers when stock falls below a threshold
+* **Automation Alerts:** Triggered automatically by Flow-based processes
+
+---
+
+## 🔄 **Flows**
+
+* **Stock Alert Flow:** Monitors inventory and sends alerts for low stock items
+* **Loyalty Status Flow:** Evaluates order history and updates loyalty tiers
+* **Order Confirmation Flow:** Sends an order confirmation email right after creation
+
+---
+
+## ⚙️ **Apex Automation**
+
+* **OrderTriggerHandler:** Apex class containing the logic for order operations
+* **OrderTrigger:** Executes business logic on creation/update of `HandsMen_Order__c`
+* **InventoryBatchJob:** Scheduled Apex batch job that scans inventory and manages restocking alerts
+* **Scheduled Job:** Automates execution of `InventoryBatchJob` at regular intervals
+
+---
+
+## 🚀 **Deployment & Versioning**
+
+* Project managed and deployed via **Salesforce CLI** using the **SFDX** development model
+* Source-controlled through **Git** and synchronized with **GitHub** for team collaboration
+
+---
+
+## ✅ **Conclusion**
+
+HandsMen Threads CRM is a smart, automated Salesforce solution tailored for high-end fashion retailers. It simplifies operations, enhances customer loyalty, and ensures inventory accuracy—all within a scalable, Lightning-powered environment. The platform reflects a modern digital transformation strategy for retail excellence.
+
+---
+
+Would you like this exported into a `.md` file or added to a GitHub project directly?
 
 ### 9. Future Enhancements
 
