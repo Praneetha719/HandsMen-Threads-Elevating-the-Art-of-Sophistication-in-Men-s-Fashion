@@ -39,16 +39,14 @@
 ---
 
 ## 🧾 **Fields Summary**
+| **Object**             | **Key Fields**                                                                                                                          |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **HandsMen Customer**  | Name (Record Name), Email (Email), Phone (Phone), Loyalty\_Status\_\_c (Picklist: Bronze, Gold, Silver), Total\_Purchases\_\_c (Number) |
+| **HandsMen Product**   | Name (Record Name), SKU (Text), Price (Currency), Stock\_Quantity\_\_c (Number)                                                         |
+| **HandsMen Order**     | Order\_Number (Record Name), Status (Picklist: Pending, Confirmed, Rejection), Quantity\_\_c (Number), Total\_Amount\_\_c (Number)      |
+| **Inventory**          | Auto Number (Record Name), Warehouse (Text), Stock\_Quantity\_\_c (Number)                                                              |
+| **Marketing Campaign** | Campaign\_Name (Record Name), Start\_Date (Date), End\_Date (Date)                                                                      |
 
-| **Object**         | **Key Fields**                                                                                    |
-| ------------------ | ------------------------------------------------------------------------------------------------- |
-| HandsMen Customer  | Name, Email, Phone, Loyalty\_Status\_\_c, Preferred\_Style\_\_c                                   |
-| HandsMen Order     | Order\_Date\_\_c, Product\_\_c, Quantity\_\_c, Total\_Amount\_\_c, Order\_Status\_\_c             |
-| HandsMen Product   | Product\_Name\_\_c, Fabric\_Type\_\_c, Price\_\_c, Size\_\_c, Availability\_Status\_\_c           |
-| Inventory          | Product\_\_c, Stock\_Quantity\_\_c, Stock\_Status\_\_c, Warehouse\_Location\_\_c                  |
-| Marketing Campaign | Campaign\_Name\_\_c, Start\_Date\_\_c, End\_Date\_\_c, Target\_Audience\_\_c, Campaign\_Type\_\_c |
-
----
 
 ## 🛡️ **Security & Access**
 
